@@ -96,7 +96,7 @@ dependencies = [
 
 [[package]]
 name = "asn1_der"
-version = "0.6.1"
+version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "asn1_der_derive 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -108,7 +108,7 @@ version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -203,6 +203,11 @@ dependencies = [
  "regex 1.1.7 (registry+https://github.com/rust-lang/crates.io-index)",
  "which 2.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
+
+[[package]]
+name = "bit_reverse"
+version = "0.1.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "bitflags"
@@ -366,24 +371,24 @@ dependencies = [
  "prml-fees 0.1.0",
  "prml-generic-asset 0.1.0",
  "slog 2.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-grandpa 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-grandpa 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "structopt 0.2.16 (registry+https://github.com/rust-lang/crates.io-index)",
- "substrate-basic-authorship 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-cli 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-aura 1.1.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-executor 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-finality-grandpa 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-keystore 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-network 0.1.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-service 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-transaction-pool 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "substrate-basic-authorship 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-cli 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-aura 1.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-executor 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-finality-grandpa 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-keystore 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-network 0.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-service 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-transaction-pool 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "tokio 0.1.21 (registry+https://github.com/rust-lang/crates.io-index)",
  "trie-root 0.12.3 (git+https://github.com/paritytech/trie)",
  "vergen 2.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -396,11 +401,11 @@ dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_derive 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
@@ -408,6 +413,7 @@ name = "cennznet-runtime"
 version = "0.9.24-beta"
 dependencies = [
  "cennznet-primitives 0.1.0",
+ "cennznut 0.1.0 (git+https://github.com/cennznet/cennznut-rs?tag=v0.1.0)",
  "crml-cennzx-spot 0.1.0",
  "crml-rewards 0.1.0",
  "crml-sylo 0.1.0",
@@ -421,29 +427,39 @@ dependencies = [
  "safe-mix 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
  "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-aura 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-contract 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-council 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-democracy 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-executive 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-grandpa 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-indices 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-session 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-staking 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-sudo 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-timestamp 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-aura-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-authorities 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-offchain-primitives 0.1.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-aura 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-contract 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-council 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-democracy 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-executive 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-grandpa 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-indices 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-session 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-staking 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-sudo 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-timestamp 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-aura-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-authorities 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-offchain-primitives 0.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+]
+
+[[package]]
+name = "cennznut"
+version = "0.1.0"
+source = "git+https://github.com/cennznet/cennznut-rs?tag=v0.1.0#2c86897d26c18b09e28f6e56ba0a395446f3ba17"
+dependencies = [
+ "bit_reverse 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hashbrown 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -537,12 +553,12 @@ dependencies = [
  "prml-fees 0.1.0",
  "prml-generic-asset 0.1.0",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
@@ -553,16 +569,16 @@ dependencies = [
  "prml-fees 0.1.0",
  "prml-generic-asset 0.1.0",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-session 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-staking 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-timestamp 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-session 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-staking 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-timestamp 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
@@ -571,13 +587,13 @@ version = "0.1.0"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-balances 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-balances 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
@@ -741,7 +757,7 @@ dependencies = [
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
  "rustc_version 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -780,6 +796,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "byteorder 1.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "quick-error 1.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "doughnut_rs"
+version = "0.1.0"
+source = "git+https://github.com/cennznet/doughnut-rs?tag=v0.1.1#5b21d463a12e9791d38088eb0b863148582e364a"
+dependencies = [
+ "bit_reverse 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hashbrown 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "primitive-types 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -866,7 +893,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
  "synstructure 0.10.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -931,7 +958,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "fork-tree"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -1037,7 +1064,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -1077,7 +1104,7 @@ dependencies = [
 [[package]]
 name = "hash-db"
 version = "0.12.3"
-source = "git+https://github.com/paritytech/trie#8dd6872de967d3f0c8fbe2a89e54614af72f4c81"
+source = "git+https://github.com/paritytech/trie#69d30b73f3dfee41fd4d1fc37112ee1f765f3862"
 
 [[package]]
 name = "hash-db"
@@ -1236,7 +1263,7 @@ dependencies = [
 
 [[package]]
 name = "hyper"
-version = "0.12.29"
+version = "0.12.30"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "bytes 0.4.12 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1329,10 +1356,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "js-sys"
-version = "0.3.22"
+version = "0.3.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "wasm-bindgen 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -1354,7 +1381,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -1362,7 +1389,7 @@ name = "jsonrpc-http-server"
 version = "10.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "hyper 0.12.29 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hyper 0.12.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "jsonrpc-core 10.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "jsonrpc-server-utils 10.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1519,7 +1546,7 @@ name = "libp2p-core"
 version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "asn1_der 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "asn1_der 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "bs58 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "bytes 0.4.12 (registry+https://github.com/rust-lang/crates.io-index)",
  "ed25519-dalek 1.0.0-pre.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1555,7 +1582,7 @@ version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -1741,12 +1768,12 @@ version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "aes-ctr 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "asn1_der 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "asn1_der 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "bytes 0.4.12 (registry+https://github.com/rust-lang/crates.io-index)",
  "ctr 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures 0.1.27 (registry+https://github.com/rust-lang/crates.io-index)",
  "hmac 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "js-sys 0.3.22 (registry+https://github.com/rust-lang/crates.io-index)",
+ "js-sys 0.3.23 (registry+https://github.com/rust-lang/crates.io-index)",
  "lazy_static 1.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "libp2p-core 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1760,9 +1787,9 @@ dependencies = [
  "tokio-io 0.1.12 (registry+https://github.com/rust-lang/crates.io-index)",
  "twofish 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "untrusted 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "wasm-bindgen 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)",
- "wasm-bindgen-futures 0.3.22 (registry+https://github.com/rust-lang/crates.io-index)",
- "web-sys 0.3.22 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen-futures 0.3.23 (registry+https://github.com/rust-lang/crates.io-index)",
+ "web-sys 0.3.23 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -1804,7 +1831,7 @@ dependencies = [
  "rw-stream-sink 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "stdweb 0.4.17 (registry+https://github.com/rust-lang/crates.io-index)",
  "tokio-io 0.1.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "wasm-bindgen 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)",
  "websocket 0.22.4 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -1896,7 +1923,7 @@ version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
  "synstructure 0.10.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -2199,7 +2226,7 @@ dependencies = [
  "proc-macro-crate 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -2363,7 +2390,7 @@ dependencies = [
  "proc-macro-hack 0.5.7 (registry+https://github.com/rust-lang/crates.io-index)",
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -2417,12 +2444,12 @@ name = "prml-attestation"
 version = "0.1.0"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
@@ -2433,12 +2460,12 @@ dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "prml-generic-asset 0.1.0",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
@@ -2447,12 +2474,12 @@ version = "0.1.0"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
@@ -2478,7 +2505,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -2721,7 +2748,7 @@ dependencies = [
 
 [[package]]
 name = "remove_dir_all"
-version = "0.5.1"
+version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "winapi 0.3.7 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -2909,7 +2936,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -3045,7 +3072,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -3083,13 +3110,30 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "sr-api-macros"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "blake2-rfc 0.2.18 (registry+https://github.com/rust-lang/crates.io-index)",
  "proc-macro-crate 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "sr-io"
+version = "1.0.0"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
+dependencies = [
+ "environmental 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db 0.12.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libsecp256k1 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustc_version 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-state-machine 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-trie 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "tiny-keccak 1.4.3 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -3112,28 +3156,37 @@ dependencies = [
 [[package]]
 name = "sr-primitives"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
+ "doughnut_rs 0.1.0 (git+https://github.com/cennznet/doughnut-rs?tag=v0.1.1)",
  "integer-sqrt 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "num-traits 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "sr-sandbox"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "rustc_version 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "wasmi 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "sr-std"
+version = "1.0.0"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
+dependencies = [
+ "rustc_version 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -3147,318 +3200,318 @@ dependencies = [
 [[package]]
 name = "sr-version"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "impl-serde 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-aura"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-session 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-staking 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-timestamp 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-session 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-staking 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-timestamp 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-balances"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "safe-mix 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-consensus"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-contract"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-wasm 0.31.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "pwasm-utils 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-sandbox 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-timestamp 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-sandbox 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-timestamp 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "wasmi-validation 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "srml-council"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "safe-mix 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-democracy 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-democracy 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-democracy"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "safe-mix 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-executive"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-finality-tracker"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-grandpa"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-finality-tracker 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-session 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-finality-grandpa-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-finality-tracker 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-session 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-finality-grandpa-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-indices"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "safe-mix 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-metadata"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-session"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "safe-mix 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-timestamp 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-timestamp 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-staking"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "safe-mix 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-session 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-session 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "uint 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "srml-sudo"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support-procedural 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support-procedural 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-support"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "bitmask 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "once_cell 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "paste 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-metadata 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support-procedural 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-metadata 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support-procedural 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-support-procedural"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-api-macros 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support-procedural-tools 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sr-api-macros 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support-procedural-tools 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "srml-support-procedural-tools"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "proc-macro-crate 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "srml-support-procedural-tools-derive 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "srml-support-procedural-tools-derive 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "srml-support-procedural-tools-derive"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "srml-system"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "safe-mix 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "srml-timestamp"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
@@ -3486,7 +3539,7 @@ dependencies = [
  "stdweb-derive 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "stdweb-internal-macros 0.2.7 (registry+https://github.com/rust-lang/crates.io-index)",
  "stdweb-internal-runtime 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
- "wasm-bindgen 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -3498,7 +3551,7 @@ dependencies = [
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_derive 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -3513,7 +3566,7 @@ dependencies = [
  "serde_derive 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_json 1.0.39 (registry+https://github.com/rust-lang/crates.io-index)",
  "sha1 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -3559,7 +3612,7 @@ dependencies = [
  "heck 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -3575,24 +3628,24 @@ dependencies = [
  "heck 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "substrate-basic-authorship"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-aura-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-transaction-pool 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-aura-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-transaction-pool 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
@@ -3609,7 +3662,7 @@ dependencies = [
 [[package]]
 name = "substrate-cli"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "ansi_term 0.11.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "app_dirs 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3625,16 +3678,16 @@ dependencies = [
  "names 0.11.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "regex 1.1.7 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_json 1.0.39 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "structopt 0.2.16 (registry+https://github.com/rust-lang/crates.io-index)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-network 0.1.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-panic-handler 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-service 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-state-machine 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-network 0.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-panic-handler 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-service 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-state-machine 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "sysinfo 0.8.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "time 0.1.42 (registry+https://github.com/rust-lang/crates.io-index)",
  "tokio 0.1.21 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3643,7 +3696,7 @@ dependencies = [
 [[package]]
 name = "substrate-client"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "derive_more 0.14.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "fnv 1.0.6 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3654,24 +3707,24 @@ dependencies = [
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "parking_lot 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-api-macros 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-executor 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-state-machine 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-trie 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-api-macros 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-executor 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-state-machine 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-trie 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "substrate-client-db"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "hash-db 0.12.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "kvdb 0.1.0 (git+https://github.com/paritytech/parity-common?rev=b0317f649ab2c665b7987b8475878fc4d2e1f81d)",
@@ -3680,71 +3733,71 @@ dependencies = [
  "lru-cache 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "parking_lot 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-executor 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-state-db 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-state-machine 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-trie 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-executor 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-state-db 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-state-machine 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-trie 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "substrate-consensus-aura"
 version = "1.1.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "error-chain 0.12.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures 0.1.27 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "parking_lot 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-aura 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-aura-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-authorities 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-slots 1.1.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-aura 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-aura-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-authorities 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-slots 1.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "tokio 0.1.21 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "substrate-consensus-aura-primitives"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "substrate-consensus-authorities"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "substrate-consensus-common"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "crossbeam-channel 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "error-chain 0.12.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3752,35 +3805,35 @@ dependencies = [
  "libp2p 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "tokio-timer 0.2.11 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "substrate-consensus-slots"
 version = "1.1.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "error-chain 0.12.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures 0.1.27 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "parking_lot 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "tokio 0.1.21 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "substrate-executor"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "byteorder 1.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "error-chain 0.12.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3789,13 +3842,13 @@ dependencies = [
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "parking_lot 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-panic-handler 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-serializer 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-state-machine 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-trie 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-panic-handler 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-serializer 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-state-machine 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-trie 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "tiny-keccak 1.4.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "wasmi 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -3803,87 +3856,87 @@ dependencies = [
 [[package]]
 name = "substrate-finality-grandpa"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "finality-grandpa 0.7.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "fork-tree 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "fork-tree 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "futures 0.1.27 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "parking_lot 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "rand 0.6.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_json 1.0.39 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "srml-finality-tracker 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-finality-grandpa-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-network 0.1.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-service 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "srml-finality-tracker 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-finality-grandpa-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-network 0.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-service 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "tokio 0.1.21 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "substrate-finality-grandpa-primitives"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "substrate-inherents"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "parking_lot 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "substrate-keyring"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "lazy_static 1.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "strum 0.14.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "strum_macros 0.14.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "substrate-keystore"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "error-chain 0.12.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "hex 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-crypto 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "rand 0.6.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_json 1.0.39 (registry+https://github.com/rust-lang/crates.io-index)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "subtle 2.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "substrate-network"
 version = "0.1.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "bitflags 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "crossbeam-channel 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "error-chain 0.12.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "fork-tree 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "fork-tree 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "futures 0.1.27 (registry+https://github.com/rust-lang/crates.io-index)",
  "linked-hash-map 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "linked_hash_set 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3893,12 +3946,12 @@ dependencies = [
  "parking_lot 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "rand 0.6.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "rustc-hex 2.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-network-libp2p 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-peerset 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-network-libp2p 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-peerset 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "tokio 0.1.21 (registry+https://github.com/rust-lang/crates.io-index)",
  "void 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -3906,7 +3959,7 @@ dependencies = [
 [[package]]
 name = "substrate-network-libp2p"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "byteorder 1.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "bytes 0.4.12 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3924,7 +3977,7 @@ dependencies = [
  "slog 2.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "slog_derive 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "smallvec 0.6.10 (registry+https://github.com/rust-lang/crates.io-index)",
- "substrate-peerset 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "substrate-peerset 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "tokio-io 0.1.12 (registry+https://github.com/rust-lang/crates.io-index)",
  "tokio-timer 0.2.11 (registry+https://github.com/rust-lang/crates.io-index)",
  "unsigned-varint 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3934,28 +3987,37 @@ dependencies = [
 [[package]]
 name = "substrate-offchain"
 version = "0.1.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "futures 0.1.27 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-offchain-primitives 0.1.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-transaction-pool 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-offchain-primitives 0.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-transaction-pool 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "tokio 0.1.21 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "substrate-offchain-primitives"
 version = "0.1.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+]
+
+[[package]]
+name = "substrate-panic-handler"
+version = "1.0.0"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
+dependencies = [
+ "backtrace 0.3.30 (registry+https://github.com/rust-lang/crates.io-index)",
+ "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -3970,7 +4032,7 @@ dependencies = [
 [[package]]
 name = "substrate-peerset"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "futures 0.1.27 (registry+https://github.com/rust-lang/crates.io-index)",
  "libp2p 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3978,6 +4040,35 @@ dependencies = [
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "lru-cache 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_json 1.0.39 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "substrate-primitives"
+version = "1.0.0"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
+dependencies = [
+ "base58 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "blake2-rfc 0.2.18 (registry+https://github.com/rust-lang/crates.io-index)",
+ "byteorder 1.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db 0.12.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash256-std-hasher 0.12.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hex 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "impl-serde 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "primitive-types 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rand 0.6.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "regex 1.1.7 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ring 0.14.6 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustc-hex 2.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "schnorrkel 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sha2 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-bip39 0.2.1 (git+https://github.com/paritytech/substrate-bip39)",
+ "tiny-bip39 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "twox-hash 1.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "untrusted 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasmi 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -4011,7 +4102,7 @@ dependencies = [
 [[package]]
 name = "substrate-rpc"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "error-chain 0.12.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "jsonrpc-core 10.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -4022,35 +4113,35 @@ dependencies = [
  "parking_lot 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_json 1.0.39 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-executor 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-network 0.1.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-state-machine 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-transaction-pool 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-executor 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-network 0.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-state-machine 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-transaction-pool 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "tokio 0.1.21 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "substrate-rpc-servers"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "jsonrpc-http-server 10.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "jsonrpc-pubsub 10.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "jsonrpc-ws-server 10.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-rpc 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-rpc 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "substrate-serializer"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_json 1.0.39 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -4059,7 +4150,7 @@ dependencies = [
 [[package]]
 name = "substrate-service"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "error-chain 0.12.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "exit-future 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -4071,20 +4162,20 @@ dependencies = [
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_json 1.0.39 (registry+https://github.com/rust-lang/crates.io-index)",
  "slog 2.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client-db 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-executor 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-keystore 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-network 0.1.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-offchain 0.1.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-rpc-servers 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-transaction-pool 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client-db 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-executor 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-keystore 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-network 0.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-offchain 0.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-rpc-servers 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-transaction-pool 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
  "target_info 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "tokio 0.1.21 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -4092,12 +4183,28 @@ dependencies = [
 [[package]]
 name = "substrate-state-db"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "parking_lot 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+]
+
+[[package]]
+name = "substrate-state-machine"
+version = "1.0.0"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
+dependencies = [
+ "hash-db 0.12.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
+ "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "parking_lot 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "substrate-panic-handler 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-trie 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "trie-db 0.12.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "trie-root 0.12.3 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -4119,7 +4226,7 @@ dependencies = [
 [[package]]
 name = "substrate-telemetry"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "lazy_static 1.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -4137,31 +4244,45 @@ dependencies = [
 [[package]]
 name = "substrate-transaction-graph"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "error-chain 0.12.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures 0.1.27 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "parking_lot 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.92 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
 ]
 
 [[package]]
 name = "substrate-transaction-pool"
 version = "1.0.0"
-source = "git+https://github.com/cennznet/plug-blockchain#e61677b4de8873cc243f77e2d3a37f788a8aea43"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
 dependencies = [
  "error-chain 0.12.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures 0.1.27 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "parking_lot 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
- "substrate-transaction-graph 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-transaction-graph 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+]
+
+[[package]]
+name = "substrate-trie"
+version = "1.0.0"
+source = "git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut#e815a1bf0bc4a7b6a2a53eab3ce87b138841c2be"
+dependencies = [
+ "hash-db 0.12.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "memory-db 0.12.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)",
+ "trie-db 0.12.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "trie-root 0.12.3 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -4190,7 +4311,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "syn"
-version = "0.15.35"
+version = "0.15.36"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -4205,7 +4326,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
  "unicode-xid 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -4239,7 +4360,7 @@ dependencies = [
  "libc 0.2.58 (registry+https://github.com/rust-lang/crates.io-index)",
  "rand 0.6.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "redox_syscall 0.1.54 (registry+https://github.com/rust-lang/crates.io-index)",
- "remove_dir_all 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "remove_dir_all 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "winapi 0.3.7 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -4558,7 +4679,7 @@ dependencies = [
 [[package]]
 name = "trie-root"
 version = "0.12.3"
-source = "git+https://github.com/paritytech/trie#8dd6872de967d3f0c8fbe2a89e54614af72f4c81"
+source = "git+https://github.com/paritytech/trie#69d30b73f3dfee41fd4d1fc37112ee1f765f3862"
 dependencies = [
  "hash-db 0.12.3 (git+https://github.com/paritytech/trie)",
 ]
@@ -4739,15 +4860,15 @@ dependencies = [
 
 [[package]]
 name = "wasm-bindgen"
-version = "0.2.45"
+version = "0.2.46"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "wasm-bindgen-macro 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen-macro 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "wasm-bindgen-backend"
-version = "0.2.45"
+version = "0.2.46"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "bumpalo 2.4.3 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -4755,49 +4876,49 @@ dependencies = [
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
- "wasm-bindgen-shared 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen-shared 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "wasm-bindgen-futures"
-version = "0.3.22"
+version = "0.3.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "futures 0.1.27 (registry+https://github.com/rust-lang/crates.io-index)",
- "js-sys 0.3.22 (registry+https://github.com/rust-lang/crates.io-index)",
- "wasm-bindgen 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)",
+ "js-sys 0.3.23 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "wasm-bindgen-macro"
-version = "0.2.45"
+version = "0.2.46"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "wasm-bindgen-macro-support 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen-macro-support 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "wasm-bindgen-macro-support"
-version = "0.2.45"
+version = "0.2.46"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
- "wasm-bindgen-backend 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)",
- "wasm-bindgen-shared 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen-backend 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen-shared 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "wasm-bindgen-shared"
-version = "0.2.45"
+version = "0.2.46"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "wasm-bindgen-webidl"
-version = "0.2.45"
+version = "0.2.46"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "failure 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -4805,8 +4926,8 @@ dependencies = [
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)",
- "wasm-bindgen-backend 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen-backend 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)",
  "weedle 0.9.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -4831,15 +4952,14 @@ dependencies = [
 
 [[package]]
 name = "web-sys"
-version = "0.3.22"
+version = "0.3.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "env_logger 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "failure 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
- "js-sys 0.3.22 (registry+https://github.com/rust-lang/crates.io-index)",
+ "js-sys 0.3.23 (registry+https://github.com/rust-lang/crates.io-index)",
  "sourcefile 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
- "wasm-bindgen 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)",
- "wasm-bindgen-webidl 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasm-bindgen-webidl 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -5002,7 +5122,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum app_dirs 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "e73a24bad9bd6a94d6395382a6c69fe071708ae4409f763c5475e14ee896313d"
 "checksum arrayref 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)" = "0d382e583f07208808f6b1249e60848879ba3543f57c32277bf52d69c2f0f0ee"
 "checksum arrayvec 0.4.10 (registry+https://github.com/rust-lang/crates.io-index)" = "92c7fb76bc8826a8b33b4ee5bb07a247a81e76764ab4d55e8f73e3a4d8808c71"
-"checksum asn1_der 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)" = "9893d63fc3b1c44231e667da6836a33f27d8b6b3bdc82f83da5dfd579d1b6528"
+"checksum asn1_der 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)" = "bea40e881533b1fe23afca9cd1c1ca022219a10fce604099ecfc96bfa26eaf1a"
 "checksum asn1_der_derive 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "9e7f92edafad155aff997fa5b727c6429b91e996b5a5d62a2b0adbae1306b5fe"
 "checksum atty 0.2.11 (registry+https://github.com/rust-lang/crates.io-index)" = "9a7d5b8723950951411ee34d271d99dddcc2035a16ab25310ea2c8cfd4369652"
 "checksum autocfg 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)" = "0e49efa51329a5fd37e7c79db4621af617cd4e3e5bc224939808d076077077bf"
@@ -5014,6 +5134,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum base64 0.9.3 (registry+https://github.com/rust-lang/crates.io-index)" = "489d6c0ed21b11d038c31b6ceccca973e65d73ba3bd8ecb9a2babf5546164643"
 "checksum bigint 4.4.1 (registry+https://github.com/rust-lang/crates.io-index)" = "ebecac13b3c745150d7b6c3ea7572d372f09d627c2077e893bf26c5c7f70d282"
 "checksum bindgen 0.47.3 (registry+https://github.com/rust-lang/crates.io-index)" = "df683a55b54b41d5ea8ebfaebb5aa7e6b84e3f3006a78f010dadc9ca88469260"
+"checksum bit_reverse 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)" = "99528ca30abb9495c7e106bf7c3177b257c62040fc0f2909fe470b0f43097296"
 "checksum bitflags 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "3d155346769a6855b86399e9bc3814ab343cd3d62c7e985113d46a0ec3c281fd"
 "checksum bitmask 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)" = "5da9b3d9f6f585199287a473f4f8dfab6566cf827d15c00c219f53c645687ead"
 "checksum blake2 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)" = "91721a6330935673395a0607df4d49a9cb90ae12d259f1b3e0a3f6e1d486872e"
@@ -5034,6 +5155,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum bytes 0.4.12 (registry+https://github.com/rust-lang/crates.io-index)" = "206fdffcfa2df7cbe15601ef46c813fce0965eb3286db6b56c583b814b51c81c"
 "checksum c_linked_list 1.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "4964518bd3b4a8190e832886cdc0da9794f12e8e6c1613a9e90ff331c4c8724b"
 "checksum cc 1.0.26 (registry+https://github.com/rust-lang/crates.io-index)" = "389803e36973d242e7fecb092b2de44a3d35ac62524b3b9339e51d577d668e02"
+"checksum cennznut 0.1.0 (git+https://github.com/cennznet/cennznut-rs?tag=v0.1.0)" = "<none>"
 "checksum cexpr 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)" = "a7fa24eb00d5ffab90eaeaf1092ac85c04c64aaf358ea6f84505b8116d24c6af"
 "checksum cfg-if 0.1.9 (registry+https://github.com/rust-lang/crates.io-index)" = "b486ce3ccf7ffd79fdeb678eac06a9e6c09fc88d33836340becb8fffe87c5e33"
 "checksum chrono 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)" = "45912881121cb26fad7c38c17ba7daa18764771836b34fab7d3fbd93ed633878"
@@ -5067,6 +5189,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum digest 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)" = "05f47366984d3ad862010e22c7ce81a7dbcaebbdfb37241a620f8b6596ee135c"
 "checksum discard 1.0.4 (registry+https://github.com/rust-lang/crates.io-index)" = "212d0f5754cb6769937f4501cc0e67f4f4483c8d2c3e1e922ee9edbe4ab4c7c0"
 "checksum dns-parser 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)" = "c4d33be9473d06f75f58220f71f7a9317aca647dc061dbd3c361b0bef505fbea"
+"checksum doughnut_rs 0.1.0 (git+https://github.com/cennznet/doughnut-rs?tag=v0.1.1)" = "<none>"
 "checksum ed25519-dalek 1.0.0-pre.1 (registry+https://github.com/rust-lang/crates.io-index)" = "81956bcf7ef761fb4e1d88de3fa181358a0d26cbcb9755b587a08f9119824b86"
 "checksum either 1.5.2 (registry+https://github.com/rust-lang/crates.io-index)" = "5527cfe0d098f36e3f8839852688e63c8fff1c90b2b405aef730615f9a7bcf7b"
 "checksum elastic-array 0.10.2 (registry+https://github.com/rust-lang/crates.io-index)" = "073be79b6538296faf81c631872676600616073817dd9a440c477ad09b408983"
@@ -5084,7 +5207,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum fnv 1.0.6 (registry+https://github.com/rust-lang/crates.io-index)" = "2fad85553e09a6f881f739c29f0b00b0f01357c743266d478b68951ce23285f3"
 "checksum foreign-types 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)" = "f6f339eb8adc052cd2ca78910fda869aefa38d22d5cb648e6485e4d3fc06f3b1"
 "checksum foreign-types-shared 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "00b0228411908ca8685dba7fc2cdd70ec9990a6e753e89b6ac91a84c40fbaf4b"
-"checksum fork-tree 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
+"checksum fork-tree 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
 "checksum fs-swap 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)" = "921d332c89b3b61a826de38c61ee5b6e02c56806cade1b0e5d81bd71f57a71bb"
 "checksum fuchsia-cprng 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "a06f77d526c1a601b7c4cdd98f54b5eaabffc14d5f2f0296febdc7f357c6d3ba"
 "checksum fuchsia-zircon 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)" = "2e9763c69ebaae630ba35f74888db465e49e259ba1bc0eda7d06f4a067615d82"
@@ -5120,7 +5243,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum httparse 1.3.3 (registry+https://github.com/rust-lang/crates.io-index)" = "e8734b0cfd3bc3e101ec59100e101c2eecd19282202e87808b3037b442777a83"
 "checksum humantime 1.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "3ca7e5f2e110db35f93b837c81797f3714500b81d517bf20c431b16d3ca4f114"
 "checksum hyper 0.10.16 (registry+https://github.com/rust-lang/crates.io-index)" = "0a0652d9a2609a968c14be1a9ea00bf4b1d64e2e1f53a1b51b6fff3a6e829273"
-"checksum hyper 0.12.29 (registry+https://github.com/rust-lang/crates.io-index)" = "e2cd6adf83b3347d36e271f030621a8cf95fd1fd0760546b9fc5a24a0f1447c7"
+"checksum hyper 0.12.30 (registry+https://github.com/rust-lang/crates.io-index)" = "40e7692b2009a70b1e9b362284add4d8b75880fefddb4acaa5e67194e843f219"
 "checksum idna 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)" = "38f09e0f0b1fb55fdee1f17470ad800da77af5186a1a76c026b679358b7e844e"
 "checksum impl-codec 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "d2050d823639fbeae26b2b5ba09aca8907793117324858070ade0673c49f793b"
 "checksum impl-serde 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "5158079de9d4158e0ce1de3ae0bd7be03904efc40b3d7dd8b8c301cbf6b52b56"
@@ -5130,7 +5253,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum interleaved-ordered 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "141340095b15ed7491bd3d4ced9d20cebfb826174b6bb03386381f62b01e3d77"
 "checksum iovec 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "dbe6e417e7d0975db6512b90796e8ce223145ac4e33c377e4a42882a0e88bb08"
 "checksum itoa 0.4.4 (registry+https://github.com/rust-lang/crates.io-index)" = "501266b7edd0174f8530248f87f99c88fbe60ca4ef3dd486835b8d8d53136f7f"
-"checksum js-sys 0.3.22 (registry+https://github.com/rust-lang/crates.io-index)" = "9987e7c13a91d9cf0efe59cca48a3a7a70e2b11695d5a4640f85ae71e28f5e73"
+"checksum js-sys 0.3.23 (registry+https://github.com/rust-lang/crates.io-index)" = "9455b1e578bd8c833c4e2ef7eaaf0522be3c1f66a51c69cd1a83a57facdfac43"
 "checksum jsonrpc-core 10.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "dc15eef5f8b6bef5ac5f7440a957ff95d036e2f98706947741bfc93d1976db4c"
 "checksum jsonrpc-derive 10.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "c2dae61ca8a3b047fb11309b00661bc56837085bd07e46f907b9c562c0b03e68"
 "checksum jsonrpc-http-server 10.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "11d2a00824306155b8ef57fe957f31b8cd8ad24262f15cf911d84dcf9a3f206d"
@@ -5257,7 +5380,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum redox_termios 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "7e891cfe48e9100a70a3b6eb652fef28920c117d366339687bd5576160db0f76"
 "checksum regex 1.1.7 (registry+https://github.com/rust-lang/crates.io-index)" = "0b2f0808e7d7e4fb1cb07feb6ff2f4bc827938f24f8c2e6a3beb7370af544bdd"
 "checksum regex-syntax 0.6.7 (registry+https://github.com/rust-lang/crates.io-index)" = "9d76410686f9e3a17f06128962e0ecc5755870bb890c34820c7af7f1db2e1d48"
-"checksum remove_dir_all 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)" = "3488ba1b9a2084d38645c4c08276a1752dcbf2c7130d74f1569681ad5d2799c5"
+"checksum remove_dir_all 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)" = "4a83fa3702a688b9359eccba92d153ac33fd2e8462f9e0e3fdf155239ea7792e"
 "checksum ring 0.14.6 (registry+https://github.com/rust-lang/crates.io-index)" = "426bc186e3e95cac1e4a4be125a4aca7e84c2d616ffc02244eef36e2a60a093c"
 "checksum ripemd160 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)" = "ad5112e0dbbb87577bfbc56c42450235e3012ce336e29c5befd7807bd626da4a"
 "checksum rocksdb 0.11.0 (registry+https://github.com/rust-lang/crates.io-index)" = "f1651697fefd273bfb4fd69466cc2a9d20de557a0213b97233b22b5e95924b5e"
@@ -5298,32 +5421,34 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum snow 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)" = "5a64f02fd208ef15bd2d1a65861df4707e416151e1272d02c8faafad1c138100"
 "checksum sourcefile 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)" = "4bf77cb82ba8453b42b6ae1d692e4cdc92f9a47beaf89a847c8be83f4e328ad3"
 "checksum spin 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)" = "44363f6f51401c34e7be73db0db371c04705d35efbe9f7d6082e03a921a32c55"
-"checksum sr-api-macros 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
+"checksum sr-api-macros 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
 "checksum sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum sr-sandbox 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
+"checksum sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum sr-sandbox 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
 "checksum sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-aura 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-balances 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-contract 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-council 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-democracy 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-executive 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-finality-tracker 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-grandpa 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-indices 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-metadata 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-session 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-staking 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-sudo 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-support-procedural 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-support-procedural-tools 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-support-procedural-tools-derive 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum srml-timestamp 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
+"checksum sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum sr-version 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-aura 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-balances 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-consensus 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-contract 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-council 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-democracy 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-executive 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-finality-tracker 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-grandpa 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-indices 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-metadata 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-session 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-staking 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-sudo 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-support-procedural 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-support-procedural-tools 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-support-procedural-tools-derive 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum srml-timestamp 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
 "checksum stable_deref_trait 1.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "dba1a27d3efae4351c8051072d619e3ade2820635c3958d826bfea39d59b54c8"
 "checksum static_assertions 0.2.5 (registry+https://github.com/rust-lang/crates.io-index)" = "c19be23126415861cb3a23e501d34a708f7f9b2183c5252d690941c2e69199d5"
 "checksum static_slice 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)" = "92a7e0c5e3dfb52e8fbe0e63a1b947bbb17b4036408b151353c4491374931362"
@@ -5338,42 +5463,46 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum structopt-derive 0.2.16 (registry+https://github.com/rust-lang/crates.io-index)" = "c6d59d0ae8ef8de16e49e3ca7afa16024a3e0dfd974a75ef93fdc5464e34523f"
 "checksum strum 0.14.0 (registry+https://github.com/rust-lang/crates.io-index)" = "1810e25f576e7ffce1ff5243b37066da5ded0310b3274c20baaeccb1145b2806"
 "checksum strum_macros 0.14.0 (registry+https://github.com/rust-lang/crates.io-index)" = "572a2f4e53dd4c3483fd79e5cc10ddd773a3acb1169bbfe8762365e107110579"
-"checksum substrate-basic-authorship 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
+"checksum substrate-basic-authorship 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
 "checksum substrate-bip39 0.2.1 (git+https://github.com/paritytech/substrate-bip39)" = "<none>"
-"checksum substrate-cli 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-client-db 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-consensus-aura 1.1.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-consensus-aura-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-consensus-authorities 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-consensus-slots 1.1.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-executor 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-finality-grandpa 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-finality-grandpa-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-keystore 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-network 0.1.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-network-libp2p 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-offchain 0.1.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-offchain-primitives 0.1.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
+"checksum substrate-cli 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-client 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-client-db 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-consensus-aura 1.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-consensus-aura-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-consensus-authorities 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-consensus-common 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-consensus-slots 1.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-executor 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-finality-grandpa 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-finality-grandpa-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-inherents 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-keyring 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-keystore 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-network 0.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-network-libp2p 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-offchain 0.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-offchain-primitives 0.1.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
 "checksum substrate-panic-handler 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-peerset 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
+"checksum substrate-panic-handler 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-peerset 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
 "checksum substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-rpc 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-rpc-servers 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-serializer 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-service 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-state-db 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
+"checksum substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-rpc 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-rpc-servers 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-serializer 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-service 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-state-db 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
 "checksum substrate-state-machine 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-transaction-graph 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
-"checksum substrate-transaction-pool 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
+"checksum substrate-state-machine 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-telemetry 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-transaction-graph 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
+"checksum substrate-transaction-pool 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
 "checksum substrate-trie 1.0.0 (git+https://github.com/cennznet/plug-blockchain)" = "<none>"
+"checksum substrate-trie 1.0.0 (git+https://github.com/cennznet/plug-blockchain?branch=go-live/doughnut)" = "<none>"
 "checksum subtle 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "2d67a5a62ba6e01cb2192ff309324cb4875d0c451d55fe2319433abe7a05a8ee"
 "checksum subtle 2.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "01dca13cf6c3b179864ab3292bd794e757618d35a7766b7c46050c614ba00829"
-"checksum syn 0.15.35 (registry+https://github.com/rust-lang/crates.io-index)" = "641e117d55514d6d918490e47102f7e08d096fdde360247e4a10f7a91a8478d3"
+"checksum syn 0.15.36 (registry+https://github.com/rust-lang/crates.io-index)" = "8b4f551a91e2e3848aeef8751d0d4eec9489b6474c720fd4c55958d8d31a430c"
 "checksum synstructure 0.10.2 (registry+https://github.com/rust-lang/crates.io-index)" = "02353edf96d6e4dc81aea2d8490a7e9db177bf8acb0e951c24940bf866cb313f"
 "checksum sysinfo 0.8.5 (registry+https://github.com/rust-lang/crates.io-index)" = "1cf62641ed7e88e20242b948d17b9fcc37e80b5599cf09cde190d6d4bb4bf289"
 "checksum take_mut 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)" = "f764005d11ee5f36500a149ace24e00e3da98b0158b3e2d53a7495660d3f4d60"
@@ -5433,16 +5562,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum version_check 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)" = "914b1a6776c4c929a602fafd8bc742e06365d4bcbe48c30f9cca5824f70dc9dd"
 "checksum void 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)" = "6a02e4885ed3bc0f2de90ea6dd45ebcbb66dacffe03547fadbb0eeae2770887d"
 "checksum want 0.0.6 (registry+https://github.com/rust-lang/crates.io-index)" = "797464475f30ddb8830cc529aaaae648d581f99e2036a928877dfde027ddf6b3"
-"checksum wasm-bindgen 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)" = "b7ccc7b93cfd13e26700a9e2e41e6305f1951b87e166599069f77d10358100e6"
-"checksum wasm-bindgen-backend 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)" = "1953f91b1608eb1522513623c7739f047bb0fed4128ce51a93f08e12cc314645"
-"checksum wasm-bindgen-futures 0.3.22 (registry+https://github.com/rust-lang/crates.io-index)" = "fa1af11c73eca3dc8c51c76ea475a4416e912da6402064a49fc6c0214701866d"
-"checksum wasm-bindgen-macro 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)" = "0f69da5696545d7ca6607a2e4b1a0edf5a6b36b2c49dbb0f1df6ad1d92884047"
-"checksum wasm-bindgen-macro-support 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)" = "2d4246f3bc73223bbb846f4f2430a60725826a96c9389adf715ed1d5af46dec6"
-"checksum wasm-bindgen-shared 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)" = "c08381e07e7a79e5e229ad7c60d15833d19033542cc5dd91d085df59d235f4a6"
-"checksum wasm-bindgen-webidl 0.2.45 (registry+https://github.com/rust-lang/crates.io-index)" = "1f42ff7adb8102bf5ad8adbc45b1635c520c8175f9fdf6eb2c54479d485d435a"
+"checksum wasm-bindgen 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)" = "5502982f20f1279d3a891c1cf8d6098df8a492e493c1228d2532fec8472e36ec"
+"checksum wasm-bindgen-backend 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)" = "97fbff1e66971afbdc4c7ec3783954c61442e3b89217626bc29952ee9583418a"
+"checksum wasm-bindgen-futures 0.3.23 (registry+https://github.com/rust-lang/crates.io-index)" = "963e7a2645cb264ebbb101925ef15b1a912ea63fc0851aa0d198356c59dffc11"
+"checksum wasm-bindgen-macro 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)" = "20c053d0cb5bf05f35f5db53e18a9363fe359cab0c65376a631d8e8028192883"
+"checksum wasm-bindgen-macro-support 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)" = "0578af634d3b25eb998a4ad587573be7e410e8a66b4a9262e62bda3a224c95b6"
+"checksum wasm-bindgen-shared 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)" = "9864292443a34a14464db49f0660202d3f7c9764d1fc9bbd49e354ad7ddd8c0a"
+"checksum wasm-bindgen-webidl 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)" = "8ab60aa7bfbf3b4c80cf53b93c0c995308425216b3840fd44b5e0ad7b1ee0ed6"
 "checksum wasmi 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)" = "aebbaef470840d157a5c47c8c49f024da7b1b80e90ff729ca982b2b80447e78b"
 "checksum wasmi-validation 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "ab380192444b3e8522ae79c0a1976e42a82920916ccdfbce3def89f456ea33f3"
-"checksum web-sys 0.3.22 (registry+https://github.com/rust-lang/crates.io-index)" = "540b8259eb242ff3a566fa0140bda03a4ece4e5c226e1284b5c95dddcd4341f6"
+"checksum web-sys 0.3.23 (registry+https://github.com/rust-lang/crates.io-index)" = "81daa27c8b5674b72c3d54de349127ffead8658aff9c2433426b901068757a1f"
 "checksum websocket 0.22.4 (registry+https://github.com/rust-lang/crates.io-index)" = "0adcd2a64c5746c9702b354a1b992802b0c363df1dfa324a74cb7aebe10e0cbf"
 "checksum weedle 0.9.0 (registry+https://github.com/rust-lang/crates.io-index)" = "bcc44aa200daee8b1f3a004beaf16554369746f1b4486f0cf93b0caf8a3c2d1e"
 "checksum which 2.0.1 (registry+https://github.com/rust-lang/crates.io-index)" = "b57acb10231b9493c8472b20cb57317d0679a49e0bdbee44b3b803a6473af164"
