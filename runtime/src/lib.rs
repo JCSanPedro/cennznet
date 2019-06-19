@@ -119,7 +119,7 @@ impl system::Trait for Runtime {
 	type Header = generic::Header<BlockNumber, BlakeTwo256, Log>;
 	type Event = Event;
 	type Log = Log;
-	type DoughnutVerifier = Self;
+	type DoughnutVerifier = Runtime;
 }
 
 impl aura::Trait for Runtime {

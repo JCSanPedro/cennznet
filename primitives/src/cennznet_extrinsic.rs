@@ -24,8 +24,8 @@ use runtime_io::blake2_256;
 use runtime_primitives::codec::{Compact, Decode, Encode, HasCompact, Input};
 use runtime_primitives::generic::Era;
 use runtime_primitives::traits::{
-	self, BlockNumberToHash, Checkable, CurrentHeight, Doughnuted, Extrinsic, Lookup, MaybeDisplay, Member,
-	SimpleArithmetic, Verify,
+	self, BlockNumberToHash, Checkable, CurrentHeight, Doughnuted, DoughnutApi,
+	Extrinsic, Lookup, MaybeDisplay, Member, SimpleArithmetic, Verify,
 };
 
 const TRANSACTION_VERSION: u8 = 0b0000_00001;
@@ -197,6 +197,7 @@ where
 			});
 		};
 
+		// If doughnut signer switch is needed. This index will become stale...
 		let (signed, signature, index, era) = self.signature.unwrap();
 		let h = context
 			.block_number_to_hash(BlockNumber::sa(era.birth(context.current_height().as_())))
@@ -229,11 +230,14 @@ where
 
 		// Verify doughnut signature. It should be signed by the issuer.
 		if let Some(d) = self.doughnut.clone() {
-			// Replace extrinsic `singed` with `issuer`
-			signed = Decode::decode(&mut &d.issuer[..]).ok_or("Invalid issuer")?;
-			let signature = Signature::decode(&mut &d.signature[..]).ok_or("Invalid signature")?;
-			let encoded = Encode::encode(&d);
-			if !signature.verify(&encoded[..(encoded.len() - 64)], &signed) {
+			let holder = AccountId::decode(&mut &d.holder()[..]).ok_or("Invalid holder")?;
+			if holder != signed {
+				return Err("bad signature in extrinsic");
+			}
+			// Replace extrinsic `signed` with `issuer`
+			signed = Decode::decode(&mut &d.issuer()[..]).ok_or("Invalid issuer")?;
+			let signature = Signature::decode(&mut &d.signature()[..]).ok_or("Invalid signature")?;
+			if !signature.verify(d.payload().as_ref(), &signed) {
 				return Err("bad signature in doughnut");
 			}
 		}

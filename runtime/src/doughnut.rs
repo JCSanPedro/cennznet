@@ -14,14 +14,17 @@ impl DoughnutVerifier<Doughnut> for Runtime {
 		if !doughnut.domains.contains_key(Self::DOMAIN) {
 			return Err("Doughnut does not grant permission for domain");
 		}
-		let cennznut: CENNZnutV0 = Decode::decode(&mut &doughnut.domains[Self::DOMAIN][..]).ok_or("Bad encoding")?;
-		if !cennznut.modules.contains_key(module) {
+		let cennznut: CENNZnutV0 = Decode::decode(&mut &doughnut.domains[Self::DOMAIN][..]).ok_or("Bad CENNZnut encoding")?;
+		// TODO: Strip `[p|s|c]rml-` quick fix. Need research into better options
+		if !cennznut.modules.contains_key(&module[5..]) {
 			return Err("Doughnut does not grant permission for module");
 		}
-		if !cennznut.modules[module].methods.contains_key(method) {
+		if !cennznut.modules[&module[5..]].methods.contains_key(method) {
 			return Err("Doughnut does not grant permission for method");
 		}
 
 		Ok(())
 	}
 }
+
+// TODO: Do we have a race condition / threading issue where doughnut is being shared??
