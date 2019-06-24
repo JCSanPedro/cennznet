@@ -5,10 +5,15 @@ jobs:
       image: ubuntu-1604:201903-01
     steps:
       - checkout
+      - run:
+          name: Generate nightly date
+          command: |
+            # ensure there'll always be a valid nightly
+            TZ="UTC" date +%Y-%m-%d -d "yesterday" > NIGHTLY_DATE
       - restore_cache:
           keys:
-            - v1-cargo-global-cache-{{ arch }}-{{ checksum "Cargo.lock" }}
-            - v1-cargo-global-cache-
+            - v1-cargo-global-cache-{{ arch }}-{{ checksum "Cargo.lock" }}-{{ checksum "NIGHTLY_DATE" }}
+            - v1-cargo-global-cache-{{ arch }}-{{ checksum "Cargo.lock" }}-
       - run:
           name: Install rust
           command: |
@@ -18,21 +23,22 @@ jobs:
               curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
             fi
             source $HOME/.cargo/env
-            rustup default nightly
-            rustup update nightly
-            rustup target add wasm32-unknown-unknown --toolchain nightly
+            rustup toolchain install nightly-"$(cat NIGHTLY_DATE)"
+            rustup default nightly-"$(cat NIGHTLY_DATE)"
+            rustup target add wasm32-unknown-unknown --toolchain nightly-"$(cat NIGHTLY_DATE)"
             command -v wasm-gc || cargo +nightly install --git https://github.com/alexcrichton/wasm-gc --force
-            rustup target add x86_64-unknown-linux-musl --toolchain=nightly
-            rustup component add rustfmt --toolchain=nightly
+            rustup target add x86_64-unknown-linux-musl --toolchain=nightly-"$(cat NIGHTLY_DATE)"
+            rustup component add rustfmt --toolchain=nightly-"$(cat NIGHTLY_DATE)"
             rustc --version; cargo --version; rustup --version
       - run:
           name: Check format
           command: |
             source $HOME/.cargo/env
-            cargo +nightly fmt
+            cargo fmt --all -- --check
       - restore_cache:
           keys:
-            - v1-cargo-wasm-cache-{{ arch }}-{{ checksum "Cargo.lock" }}
+            - v1-cargo-wasm-cache-{{ arch }}-{{ checksum "Cargo.lock" }}-{{ checksum "NIGHTLY_DATE" }}
+            - v1-cargo-wasm-cache-{{ arch }}-{{ checksum "Cargo.lock" }}-
       - run:
           name: Build WASM
           command: |
@@ -41,16 +47,17 @@ jobs:
       - save_cache:
           paths:
             - runtime/wasm/target/
-          key: v1-cargo-wasm-cache-{{ arch }}-{{ checksum "Cargo.lock" }}
+          key: v1-cargo-wasm-cache-{{ arch }}-{{ checksum "Cargo.lock" }}-{{ checksum "NIGHTLY_DATE" }}
       - restore_cache:
           keys:
-            - v1-target-cache-{{ arch }}-{{ checksum "Cargo.lock" }}
-            - v1-target-cache-
+            - v1-target-cache-{{ arch }}-{{ checksum "Cargo.lock" }}-{{ checksum "NIGHTLY_DATE" }}
+            - v1-target-cache-{{ arch }}-{{ checksum "Cargo.lock" }}-
       - run:
-          name: Build binary
+          name: Build binary and tests
           command: |
             source $HOME/.cargo/env
             cargo build
+            cargo test --all --no-run
           no_output_timeout: 30m
       - save_cache:
           paths:
@@ -58,13 +65,44 @@ jobs:
             - target/debug/build
             - target/debug/deps
             - target/debug/incremental
-          key: v1-target-cache-{{ arch }}-{{ checksum "Cargo.lock" }}
+          key: v1-target-cache-{{ arch }}-{{ checksum "Cargo.lock" }}-{{ checksum "NIGHTLY_DATE" }}
       - save_cache:
           paths:
             - /home/circleci/.cargo
-          key: v1-cargo-global-cache-{{ arch }}-{{ checksum "Cargo.lock" }}
+          key: v1-cargo-global-cache-{{ arch }}-{{ checksum "Cargo.lock" }}-{{ checksum "NIGHTLY_DATE" }}
       - run:
           name: Run tests
           command: |
             source $HOME/.cargo/env
             cargo test --all --verbose --locked
+  publish-docker:
+    machine:
+      image: ubuntu-1604:201903-01
+    steps:
+      - checkout
+      - run:
+          name: Build and publish Docker image
+          command: |
+            docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
+            if [ -z "${CIRCLE_TAG}" ]; then
+              GIT_SHORT="${CIRCLE_SHA1:0:8}"
+              VERSION="$(grep package -C 5 Cargo.toml | grep version | cut -d \" -f2)"
+              DOCKER_TAG="$VERSION-$GIT_SHORT"
+            else
+              DOCKER_TAG="${CIRCLE_TAG}"
+            fi
+            docker build --pull -t cennznet/cennznet:latest -t cennznet/cennznet:$DOCKER_TAG -f docker/Dockerfile .
+            docker push cennznet/cennznet:$DOCKER_TAG
+            docker push cennznet/cennznet:latest
+          no_output_timeout: 60m
+workflows:
+  version: 2
+  build-publish:
+    jobs:
+      - build
+      - publish-docker:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
