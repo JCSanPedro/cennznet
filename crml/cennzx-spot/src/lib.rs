@@ -46,7 +46,9 @@ pub trait Trait: system::Trait + generic_asset::Trait {
 	/// A function type to get an exchange address given the asset ID pair.
 	type ExchangeAddressGenerator: ExchangeAddressFor<Self::AssetId, Self::AccountId>;
 	// TODO: this is just a quick workaround for type conversion issue. should be replaced with proper From/TryFrom Into/TryInfo bounds
-	type AsBalance: From<<Self as generic_asset::Trait>::Balance> + Into<<Self as generic_asset::Trait>::Balance> + As<u128>;
+	type AsBalance: From<<Self as generic_asset::Trait>::Balance>
+		+ Into<<Self as generic_asset::Trait>::Balance>
+		+ As<u128>;
 }
 
 decl_module! {

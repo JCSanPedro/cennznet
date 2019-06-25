@@ -123,9 +123,6 @@ pub(crate) mod impl_tests {
 
 	#[test]
 	fn u64_to_bytes_works() {
-		assert_eq!(
-			u64_to_bytes(80_000),
-			[128, 56, 1, 0, 0, 0, 0, 0]
-		);
+		assert_eq!(u64_to_bytes(80_000), [128, 56, 1, 0, 0, 0, 0, 0]);
 	}
 }

@@ -98,8 +98,8 @@ impl<T: Trait> Module<T> {}
 pub(super) mod tests {
 	use super::*;
 	use codec::{Decode, Encode};
+	use primitives::traits::{Lazy, Verify};
 	use serde::{Deserialize, Serialize};
-	use primitives::traits::{Verify, Lazy};
 
 	use self::sr_io::with_externalities;
 	use self::substrate_primitives::{Blake2Hasher, H256};

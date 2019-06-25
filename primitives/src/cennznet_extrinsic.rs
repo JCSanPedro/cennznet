@@ -24,8 +24,8 @@ use runtime_io::blake2_256;
 use runtime_primitives::codec::{Compact, Decode, Encode, HasCompact, Input};
 use runtime_primitives::generic::Era;
 use runtime_primitives::traits::{
-	self, BlockNumberToHash, Checkable, CurrentHeight, Doughnuted, DoughnutApi,
-	Extrinsic, Lookup, MaybeDisplay, Member, SimpleArithmetic,
+	self, BlockNumberToHash, Checkable, CurrentHeight, DoughnutApi, Doughnuted, Extrinsic, Lookup, MaybeDisplay,
+	Member, SimpleArithmetic,
 };
 
 const TRANSACTION_VERSION: u8 = 0b0000_00001;
@@ -101,7 +101,8 @@ where
 	}
 }
 
-impl<AccountId, Index, Call, Balance, Doughnut> traits::Applyable for CheckedCennznetExtrinsic<AccountId, Index, Call, Balance, Doughnut>
+impl<AccountId, Index, Call, Balance, Doughnut> traits::Applyable
+	for CheckedCennznetExtrinsic<AccountId, Index, Call, Balance, Doughnut>
 where
 	AccountId: Member + MaybeDisplay,
 	Index: Member + MaybeDisplay + SimpleArithmetic,
@@ -236,12 +237,15 @@ where
 
 		// Verify doughnut signature. It should be signed by the issuer.
 		if let Some(ref d) = self.doughnut {
-			let holder = AccountId::decode(&mut d.holder().as_ref()).ok_or("doughnut holder incompatible with runtime AccountId")?;
+			let holder = AccountId::decode(&mut d.holder().as_ref())
+				.ok_or("doughnut holder incompatible with runtime AccountId")?;
 			if holder != signed {
 				return Err("bad signature in extrinsic");
 			}
-			let issuer = AccountId::decode(&mut d.issuer().as_ref()).ok_or("doughnut issuer incompatible with runtime AccountId")?;
-			let signature = Signature::decode(&mut &d.signature().borrow()[..]).ok_or("doughnut signature incompatible with runtime Signature")?;
+			let issuer = AccountId::decode(&mut d.issuer().as_ref())
+				.ok_or("doughnut issuer incompatible with runtime AccountId")?;
+			let signature = Signature::decode(&mut &d.signature().borrow()[..])
+				.ok_or("doughnut signature incompatible with runtime Signature")?;
 			if !signature.verify(d.payload().as_ref(), &issuer) {
 				return Err("bad signature in doughnut");
 			}
@@ -351,8 +355,8 @@ where
 }
 
 #[cfg(feature = "std")]
-impl<AccountId: Encode, Address: Encode, Index, Signature: Encode, Call: Encode, Balance, Doughnut: Encode> serde::Serialize
-	for CennznetExtrinsic<AccountId, Address, Index, Call, Signature, Balance, Doughnut: Encode>
+impl<AccountId: Encode, Address: Encode, Index, Signature: Encode, Call: Encode, Balance, Doughnut: Encode>
+	serde::Serialize for CennznetExtrinsic<AccountId, Address, Index, Call, Signature, Balance, Doughnut>
 where
 	Compact<Index>: Encode,
 	Balance: HasCompact,
@@ -416,7 +420,7 @@ impl<Balance: HasCompact> FeeExchange<Balance> {
 impl<AccountId, Address, Index, Call, Signature, Balance: HasCompact, Doughnut> Doughnuted
 	for CennznetExtrinsic<AccountId, Address, Index, Call, Signature, Balance, Doughnut>
 where
-	Doughnut: Encode + Clone + DoughnutApi
+	Doughnut: Encode + Clone + DoughnutApi,
 {
 	type Doughnut = Doughnut;
 	fn doughnut(&self) -> Option<&Doughnut> {
