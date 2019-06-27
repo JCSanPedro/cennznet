@@ -27,3 +27,5 @@ extern crate srml_support;
 extern crate runtime_primitives;
 extern crate srml_balances as balances;
 extern crate srml_system as system;
+
+pub mod service;
