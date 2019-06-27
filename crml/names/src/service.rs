@@ -50,12 +50,23 @@ decl_module! {
             <Names<T>>::insert(&user, names);
         }
 
-        fn update(origin, name: Name, newAddress: T::AccountId) {
+        fn update(origin, name: Name, new_address: T::AccountId) {
             let user = ensure_signed(origin)?;
+            let owner = <Address<T>>::get(&name);
+            ensure!(user.clone() == owner.clone(), "User does not own name");
+            ensure!(<Address<T>>::exists(&name), "This name does not exist");
+            <Address<T>>::remove(name.clone());
+            <Address<T>>::insert(name.clone(), new_address.clone());
+            let mut names = <Names<T>>::get(&new_address);
+            names.push(name);
+            <Names<T>>::insert(&new_address, names);
         }
 
         fn delete(origin, name: Name) {
             let user = ensure_signed(origin)?;
+            let owner = <Address<T>>::get(&name);
+            ensure!(user.clone() == owner.clone(), "User does not own name");
+            <Address<T>>::remove(name.clone());
         }
 
         fn renew(origin, name: Name) {
