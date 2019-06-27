@@ -67,6 +67,12 @@ decl_module! {
             let owner = <Address<T>>::get(&name);
             ensure!(user.clone() == owner.clone(), "User does not own name");
             <Address<T>>::remove(name.clone());
+            let mut names= <Names<T>>::get(&user);
+            names = names
+                .into_iter()
+                .filter(|existing_name| &name != existing_name)
+                .collect();
+            <Names<T>>::insert(&user, names);
         }
 
         fn renew(origin, name: Name) {
