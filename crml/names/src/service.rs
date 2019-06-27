@@ -199,4 +199,26 @@ mod tests {
 			);
 	    })
     }
+
+	#[test]
+	fn should_delete_name() {
+		with_externalities(&mut new_test_ext(), || {
+			let name = b"SuperName".to_vec();
+
+			assert_ok!(Names::create(
+				Origin::signed(H256::from_low_u64_be(1)),
+				name.clone()
+			));
+
+			assert_ok!(Names::delete(
+				Origin::signed(H256::from_low_u64_be(1)),
+				name.clone(),
+			));
+
+            assert_eq!(
+				Names::names(H256::from_low_u64_be(1)).len(),
+				0
+			);
+	    })
+    }
 }
