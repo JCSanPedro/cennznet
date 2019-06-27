@@ -2465,6 +2465,7 @@ dependencies = [
 name = "prml-generic-asset"
 version = "0.1.0"
 dependencies = [
+ "crml-names 0.1.0",
  "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.93 (registry+https://github.com/rust-lang/crates.io-index)",
  "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",

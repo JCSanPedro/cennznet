@@ -75,7 +75,7 @@ decl_module! {
             <Names<T>>::insert(&user, names);
         }
 
-        fn renew(origin, name: Name) {
+        fn renew(origin, _name: Name) {
             let user = ensure_signed(origin)?;
         }
 	}
@@ -172,6 +172,29 @@ mod tests {
 
             assert_eq!(
 				Names::names(H256::from_low_u64_be(1)),
+				vec![name.clone()]
+			);
+	    })
+    }
+
+	#[test]
+	fn should_update_name() {
+		with_externalities(&mut new_test_ext(), || {
+			let name = b"SuperName".to_vec();
+
+			assert_ok!(Names::create(
+				Origin::signed(H256::from_low_u64_be(1)),
+				name.clone()
+			));
+
+			assert_ok!(Names::update(
+				Origin::signed(H256::from_low_u64_be(1)),
+				name.clone(),
+				H256::from_low_u64_be(2),
+			));
+
+            assert_eq!(
+				Names::names(H256::from_low_u64_be(2)),
 				vec![name.clone()]
 			);
 	    })
