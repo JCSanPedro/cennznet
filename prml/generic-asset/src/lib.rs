@@ -168,6 +168,8 @@ use support::{
 };
 use system::ensure_signed;
 
+pub use names::service as names_service;
+
 mod mock;
 mod tests;
 
@@ -328,6 +330,13 @@ decl_module! {
 			let origin = ensure_signed(origin)?;
 			ensure!(!amount.is_zero(), "cannot transfer zero amount");
 			Self::make_transfer_with_event(&asset_id, &origin, &to, amount)?;
+		}
+
+		pub fn transfer_to_alias(origin, #[compact] asset_id: T::AssetId, name: names_service::Name, #[compact] amount: T::Balance) {
+			let origin = ensure_signed(origin)?;
+			ensure!(!amount.is_zero(), "cannot transfer zero amount");
+			// let to: T::AccountId = <names_service::Address<T>>::get(name);
+			// Self::make_transfer_with_event(&asset_id, &origin, &to, amount)?;
 		}
 
 		/// Updates permission for a given `asset_id` and an account.
