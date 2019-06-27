@@ -17,6 +17,10 @@ use srml_support::{dispatch::Result, dispatch::Vec, StorageMap};
 use {system::ensure_signed};
 extern crate srml_system as system;
 
+extern crate sr_io;
+extern crate runtime_primitives;
+extern crate primitives;
+
 pub type Name = Vec<u8>;
 // pub struct NameSubscription = {
 //     name: Name,
@@ -37,10 +41,13 @@ decl_module! {
 	pub struct Module<T: Trait> for enum Call where origin: T::Origin {
 		// fn deposit_event<T>() = default;
 
-        fn create(origin, name: Name, subscriptionTime: u32) {
+        fn create(origin, name: Name) {
             let user = ensure_signed(origin)?;
-            ensure!(<Address<T>>::exists(&name), "This name is reserved");
-            <Address<T>>::insert(name, user);
+            ensure!(!<Address<T>>::exists(&name), "This name is reserved");
+            <Address<T>>::insert(name.clone(), user.clone());
+            let mut names = <Names<T>>::get(&user);
+            names.push(name);
+            <Names<T>>::insert(&user, names);
         }
 
         fn update(origin, name: Name, newAddress: T::AccountId) {
@@ -51,7 +58,7 @@ decl_module! {
             let user = ensure_signed(origin)?;
         }
 
-        fn renew(origin, name: Name, subscriptionTime: u32) {
+        fn renew(origin, name: Name) {
             let user = ensure_signed(origin)?;
         }
 	}
@@ -147,8 +154,9 @@ mod tests {
 			));
 
             assert_eq!(
-				Vault::values(H256::from_low_u64_be(1)),
+				Names::names(H256::from_low_u64_be(1)),
 				vec![name.clone()]
 			);
-	}
+	    })
+    }
 }
