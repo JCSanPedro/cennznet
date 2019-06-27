@@ -64,6 +64,7 @@ pub use sylo::groups as sylo_groups;
 pub use sylo::inbox as sylo_inbox;
 pub use sylo::response as sylo_response;
 pub use sylo::vault as sylo_vault;
+pub use names::service as names_service;
 
 mod fee;
 
@@ -247,6 +248,8 @@ impl sylo::response::Trait for Runtime {}
 impl sylo::inbox::Trait for Runtime {}
 impl sylo::vault::Trait for Runtime {}
 
+impl names::service::Trait for Runtime {}
+
 construct_runtime!(
 	pub enum Runtime with Log(InternalLog: DigestItem<Hash, AuthorityId, AuthoritySignature>) where
 		Block = Block,
@@ -279,6 +282,7 @@ construct_runtime!(
 		SyloInbox: sylo_inbox::{Module, Call, Storage},
 		SyloResponse: sylo_response::{Module, Call, Storage},
 		SyloVault: sylo_vault::{Module, Call, Storage},
+		Names: names_service::{Module, Call, Storage},
 	}
 );
 

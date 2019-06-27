@@ -262,6 +262,7 @@ version = "0.9.24-beta"
 dependencies = [
  "cennznet-primitives 0.1.0",
  "crml-cennzx-spot 0.1.0",
+ "crml-names 0.1.0",
  "crml-rewards 0.1.0",
  "crml-sylo 0.1.0",
  "hex-literal 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -353,6 +354,21 @@ dependencies = [
  "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
  "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
  "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+]
+
+[[package]]
+name = "crml-names"
+version = "0.1.0"
+dependencies = [
+ "parity-codec 3.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde 1.0.93 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sr-io 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "sr-std 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
+ "srml-balances 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
  "srml-support 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
  "srml-system 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
  "substrate-primitives 1.0.0 (git+https://github.com/cennznet/plug-blockchain)",
